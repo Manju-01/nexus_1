@@ -4,7 +4,7 @@
   <groupId>com.dep</groupId>
   <artifactId>nexus_1</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>nexus_1 Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -15,6 +15,28 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+   <distributionManagement>
+
+   <repository>
+    <id>maven-releases</id>
+      <url>http://localhost:8081/repository/maven-releases/</url>
+   </repository>
+
+
+
+    <snapshotRepository>
+      <id>maven-snapshots</id>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+
+    </distributionManagement>
+    <repositories>
+    <repository>
+      <id>maven-public</id>
+      <url>http://localhost:8081/repository/maven-public/</url>
+    </repository>
+  </repositories>
+  
   <build>
     <finalName>nexus_1</finalName>
   </build>
