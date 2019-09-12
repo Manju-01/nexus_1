@@ -18,14 +18,14 @@
    <distributionManagement>
 
    <repository>
-    <id>maven-releases</id>
+    <id>deployment</id>
       <url>http://localhost:8081/repository/nexus_1/</url>
    </repository>
 
 
 
     <snapshotRepository>
-      <id>maven-snapshots</id>
+      <id>deployment</id>
       <url>http://localhost:8081/repository/nexus_1/</url>
     </snapshotRepository>
 
