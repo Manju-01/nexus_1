@@ -30,12 +30,6 @@
     </snapshotRepository>
 
     </distributionManagement>
-    <repositories>
-    <repository>
-      <id>deployment</id>
-      <url>http://localhost:8081/repository/nexus_1/</url>
-    </repository>
-  </repositories>
   
   <build>
     <finalName>nexus_1</finalName>
